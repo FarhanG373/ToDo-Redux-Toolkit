@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  h1 {
+    font-size: 24px;
+    color: cornflowerblue;
+  }
+  input,
+  select {
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+    height: 30px;
+    background: cornflowerblue;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 20px;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    span {
+      display: flex;
+      max-width: 300px;
+      width: 100%;
+      select {
+        margin-left: 10px;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f0ffff;
+      padding: 10px;
+
+      div + div {
+        display: flex;
+        button {
+          margin-left: 10px;
+        }
+      }
+      h3,
+      p {
+        margin: 0px;
+      }
+    }
+  }
+  .editSection {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+  }
+}
